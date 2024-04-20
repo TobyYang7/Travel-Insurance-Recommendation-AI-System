@@ -8,6 +8,8 @@ As the economy and aviation industry develops, more and more people choose to tr
   
 Therefore, Our project will design a new Al system to predict flight delays and price the insurance, enabling the airlines can provide personalized insurance recommendations for passengers. This Al system will analyze the rates of flight delays based on multiple relevant data, such as flight dynamic data, city weather, and special situations data. Besides, it will construct user profiles with sentiment analysis based on users' feedback to airlines. Finally, the system will offer a personalized and optimal insurance recommendations, contributing to supplying a suitable service for each customer and gaining more benefits for airlines. Through personalized insurance recommendations, our AI system can boost customer satisfaction and loyalty while reducing stress caused by flight delays. Our system could reshape customer service in the airline industry and promote a positive image and competitive edge for airlines, resulting from focusing on prediction accuracy and user interaction quality.
 
+## Team Member
+
 ## Dataset
 
 [Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment?resource=download&select=Tweets.csv)

@@ -7,14 +7,15 @@ import argparse
 import random
 import numpy as np
 from tqdm import trange
-import tensorboard as tb
+from torch.utils.tensorboard import SummaryWriter
 import json
 import argparse
 import pandas as pd
 import os
 # Read the configuration file
 
-writer = tb.SummaryWriter()
+writer = SummaryWriter()
+best_metrics = {}
 
 
 def store_result(yhat, label, i):
@@ -105,10 +106,11 @@ def main(delay_index=0):  # Select arr or dep
             outputs.append(output)
         yhat = np.concatenate(outputs)
         loss = util.test_error(yhat, label)[0]  # Cal based on MAE
-        writer.add_scalar('Loss/train', loss, ep)
-        if (loss < best_loss):
-            best_loss, best_ep = loss, ep
-            torch.save(model.state_dict(), f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/GRU_pretrained_ep{ep}.pth')
+
+        if delay_index == 0:
+            writer.add_scalar('Arr_loss/train', loss, ep)
+        if delay_index == 1:
+            writer.add_scalar('Dep_loss/train', loss, ep)
 
         prediction2 = store_result(yhat, label, 2)
         amae3.append(prediction2[0])
@@ -123,13 +125,49 @@ def main(delay_index=0):  # Select arr or dep
         amape12.append(prediction11[1])
         armse12.append(prediction11[2])
 
-        if delay_index == 0:
-            np.savez('/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/arr.npz', predict=yhat, true=label)
+        if (loss < best_loss):
+            old_arr_model_path = f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/arr/GRU_pretrained_ep{best_ep}.pth'
+            old_dep_model_path = f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/dep/GRU_pretrained_ep{best_ep}.pth'
+            old_arr_npz_path = f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/arr/arr_{best_ep}.npz'
+            old_dep_npz_path = f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/dep/dep_{best_ep}.npz'
+            best_loss, best_ep = loss, ep
 
-        if delay_index == 1:
-            np.savez('/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/dep.npz', predict=yhat, true=label)
+            if delay_index == 0:
+                if os.path.exists(old_arr_model_path):
+                    os.remove(old_arr_model_path)
+                if os.path.exists(old_arr_npz_path):
+                    os.remove(old_arr_npz_path)
+                torch.save(model.state_dict(), f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/arr/GRU_pretrained_ep{ep}.pth')
+                np.savez(f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/arr/arr_{ep}.npz', predict=yhat, true=label)
+
+            if delay_index == 1:
+                if os.path.exists(old_dep_model_path):
+                    os.remove(old_dep_model_path)
+                if os.path.exists(old_dep_npz_path):
+                    os.remove(old_dep_npz_path)
+                torch.save(model.state_dict(), f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/dep/GRU_pretrained_ep{ep}.pth')
+                np.savez(f'/home/zhangmin/toby/IBA_Project_24spr/saves/GRU/dep/dep_{ep}.npz', predict=yhat, true=label)
+
+            best_metrics = {
+                'epoch': ep,
+                'loss': best_loss,
+                'amae3': amae3[ep],
+                'amape3': amape3[ep],
+                'armse3': armse3[ep],
+                'amae6': amae6[ep],
+                'amape6': amape6[ep],
+                'armse6': armse6[ep],
+                'amae12': amae12[ep],
+                'amape12': amape12[ep],
+                'armse12': armse12[ep]
+            }
 
     print("Best epoch:", best_ep)
+    print("Loss at best epoch:", best_metrics['loss'])
+    print(f"Error of GRU in 3-step: (MAE: {best_metrics['amae3']}, RMSE: {best_metrics['armse3']}, MAPE: {best_metrics['amape3']})")
+    print(f"Error of GRU in 6-step: (MAE: {best_metrics['amae6']}, RMSE: {best_metrics['armse6']}, MAPE: {best_metrics['amape6']})")
+    print(f"Error of GRU in 12-step: (MAE: {best_metrics['amae12']}, RMSE: {best_metrics['armse12']}, MAPE: {best_metrics['amape12']})")
+    print("---------------------------------------------------------------------------------------")
     print(f"Error of GRU in 3-step: ({round(amae3[best_ep],3)}, {round(armse3[best_ep],3)}, {round(amape3[best_ep],3)})")
     print(f"Error of GRU in 6-step: ({round(amae6[best_ep],3)}, {round(armse6[best_ep],3)}, {round(amape6[best_ep],3)})")
     print(f"Error of GRU in 12-step: ({round(amae12[best_ep],3)}, {round(armse12[best_ep],3)}, {round(amape12[best_ep],3)})")

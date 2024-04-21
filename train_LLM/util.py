@@ -1,3 +1,5 @@
+from tqdm import tqdm
+import jsonlines
 from transformers import TrainerCallback
 from typing import List, Dict, Optional
 import os
@@ -99,3 +101,62 @@ def data_collator(features: list) -> dict:
         "input_ids": input_ids,
         "labels": labels,
     }
+
+
+def generate_text(model, tokenizer, input_text, temperature=0.5, top_p=0.1,  n=1):
+    """
+    Generates text based on the input text using the specified model and tokenizer.
+
+    Parameters:
+        model (torch.nn.Module): The pre-trained language model.
+        tokenizer (transformers.PreTrainedTokenizer): The tokenizer for encoding the text.
+        input_text (str): The text to generate from.
+        temperature (float): Controls the randomness of the predictions by scaling the logits before applying softmax.
+        top_p (float): The cumulative probability for top-p-filtering.
+        frequency_penalty (float): The penalty for frequency of tokens in the generated text.
+        presence_penalty (float): The penalty for presence of tokens in the generated text.
+        n (int): The number of sequences to generate.
+
+    Returns:
+        str: The generated text.
+    """
+
+    tokenizer.padding_side = "left"
+    if not tokenizer.pad_token or tokenizer.pad_token_id == tokenizer.eos_token_id:
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        model.resize_token_embeddings(len(tokenizer))
+
+    # Encode the input text
+    input_ids = tokenizer.encode(input_text, return_tensors='pt').to(model.device)
+
+    # Generate the sequence
+    output_ids = model.generate(
+        input_ids,
+        max_length=200,  # Assuming max_length is fixed or you can make it a parameter
+        temperature=temperature,
+        top_p=top_p,
+        num_return_sequences=n,
+        pad_token_id=tokenizer.eos_token_id,
+        no_repeat_ngram_size=2,  # Assuming you want to avoid repeating n-grams, adjust as needed
+        do_sample=True
+    )
+
+    # Decode and return the generated text
+    generated_texts = [tokenizer.decode(output_id, skip_special_tokens=True) for output_id in output_ids]
+    return generated_texts[0] if n == 1 else generated_texts
+
+
+def score(model, path, max_length=200):
+    count = 0
+    total = 0
+    with jsonlines.open(path) as reader:
+        for obj in tqdm(reader, desc=f"Scoring {str(model)}", dynamic_ncols=True, smoothing=0.1):
+            total += 1
+            ground_truth = obj['target']
+            context = obj['context']
+            answer = model.chat([{"role": "user", "content": ""}], system=context)
+            if ground_truth in answer:
+                count += 1
+            if total == max_length:
+                break
+    return count / total if total > 0 else 0

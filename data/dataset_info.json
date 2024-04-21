@@ -1,0 +1,24 @@
+{
+  "InsuranceCorpus": {
+    "hf_hub_url": "Ddream-ai/InsuranceCorpus",
+    "columns": {
+      "prompt": "\u54a8\u8be2",
+      "response": "\u56de\u590d"
+    }
+  },
+  "US_Airline_Sentiment": {
+    "hf_hub_url": "Shayanvsf/US_Airline_Sentiment",
+    "columns": {
+      "query": "text",
+      "prompt": "\u4f60\u73b0\u5728\u9700\u8981\u5224\u65ad\u8fd9\u4e2a\u8bc4\u8bba\u7684\u60c5\u611f\u662f\u79ef\u6781\u8fd8\u662f\u6d88\u6781\u7684\uff0c\u5982\u679c\u662f\u79ef\u6781\u7684\uff0c\u8bf7\u8f93\u51fa1\uff0c\u5982\u679c\u662f\u6d88\u6781\u7684\uff0c\u8bf7\u8f93\u51fa0",
+      "response": "airline_sentiment"
+    }
+  },
+  "sentiment": {
+    "file_name": "flight_review.jsonl",
+    "columns": {
+      "prompt": "context",
+      "response": "target"
+    }
+  }
+}

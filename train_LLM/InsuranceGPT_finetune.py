@@ -9,7 +9,7 @@ os.environ['HF_HUB_ENABLE_HF_TRANSFER'] = '1'
 os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 
-file_path = '/home/zhangmin/toby/IBA_Project_24spr/LLaMA-Factory/data/dataset_info.json'
+file_path = '/home/zhangmin/toby/IBA_Project_24spr/data/dataset_info.json'
 with open(file_path, 'r') as file:
     data = json.load(file)
 data['InsuranceCorpus'] = {'hf_hub_url': 'Ddream-ai/InsuranceCorpus',
@@ -26,15 +26,16 @@ with open(file_path, 'w') as file:
     json.dump(data, file, indent=4)
 
 # chatglm2_6b --> InsuranceGPT
+# qwen --> InsuranceGPT
 finetune_config1 = dict(
     stage="sft",
     do_train=True,
-    model_name_or_path="/home/zhangmin/.kaggle/chatglm2-6b/",
-    template="chatglm2",
-    dataset_dir="/home/zhangmin/toby/IBA_Project_24spr/LLaMA-Factory/data",
+    model_name_or_path="Qwen/Qwen1.5-7B-Chat",
+    template="qwen",
+    dataset_dir="/home/zhangmin/toby/IBA_Project_24spr/data",
     dataset="InsuranceCorpus",
     finetuning_type="lora",
-    output_dir="/home/zhangmin/toby/IBA_Project_24spr/saves/insurance_glm2_6b",
+    output_dir="/home/zhangmin/toby/IBA_Project_24spr/saves/insurance_qwen_7b",
     per_device_train_batch_size=2,
     gradient_accumulation_steps=1,
     lr_scheduler_type="cosine",
@@ -43,10 +44,10 @@ finetune_config1 = dict(
     learning_rate=0.0002,
     num_train_epochs=5,
     max_grad_norm=0.5,
-    fp16=True,
+    # fp16=True,
     overwrite_output_dir=True,
-    quantization_bit=8,
-    upcast_layernorm=True,
+    # quantization_bit=8,
+    # upcast_layernorm=True,
 )
 
 # sentiment analysis
@@ -55,7 +56,7 @@ finetune_config2 = dict(
     do_train=True,
     model_name_or_path="/home/zhangmin/.kaggle/chatglm2-6b/",
     template="chatglm2",
-    dataset_dir="/home/zhangmin/toby/IBA_Project_24spr/LLaMA-Factory/data",
+    dataset_dir="/home/zhangmin/toby/IBA_Project_24spr/data",
     dataset="US_Airline_Sentiment",
     finetuning_type="lora",
     output_dir="/home/zhangmin/toby/IBA_Project_24spr/saves/insurance_glm2_6b_sentiment",
@@ -73,4 +74,5 @@ finetune_config2 = dict(
     quantization_bit=8,
     upcast_layernorm=True,
 )
-run_exp(finetune_config2)
+# run_exp(finetune_config1)
+run_exp()

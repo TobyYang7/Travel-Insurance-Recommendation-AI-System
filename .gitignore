@@ -1,3 +1,7 @@
 LLaMA-Factory/
 saves/
 __pycache__/
+data/us_flight_data/adj_mx.npy
+data/us_flight_data/od_pair.npy
+data/us_flight_data/udelay.npy
+data/us_flight_data/weather2016_2021.npy

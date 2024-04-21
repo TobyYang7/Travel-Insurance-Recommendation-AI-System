@@ -12,7 +12,7 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 exp1_config = {
     "model_name_or_path": "/home/zhangmin/.kaggle/chatglm2-6b/",
     "template": "chatglm2",
-    "dataset_dir": "/home/zhangmin/toby/IBA_Project_24spr/LLaMA-Factory/data",
+    "dataset_dir": "/home/zhangmin/toby/IBA_Project_24spr/data",
     "dataset": "InsuranceCorpus",
     # "cutoff_len": 1024,
     "per_device_train_batch_size": 2,
@@ -28,7 +28,7 @@ exp1_config = {
 exp2_config = {
     "model_name_or_path": "/home/zhangmin/.kaggle/chatglm2-6b/",
     "template": "chatglm2",
-    "dataset_dir": "/home/zhangmin/toby/IBA_Project_24spr/LLaMA-Factory/data",
+    "dataset_dir": "/home/zhangmin/toby/IBA_Project_24spr/data",
     "dataset": "InsuranceCorpus",
     # "cutoff_len": 1024,
     "per_device_train_batch_size": 2,

@@ -33,9 +33,9 @@ finetune_config1 = dict(
     model_name_or_path="Qwen/Qwen1.5-7B-Chat",
     template="qwen",
     dataset_dir="/home/zhangmin/toby/IBA_Project_24spr/data",
-    dataset="InsuranceCorpus",
+    dataset="sentiment",
     finetuning_type="lora",
-    output_dir="/home/zhangmin/toby/IBA_Project_24spr/saves/insurance_qwen_7b",
+    output_dir="/home/zhangmin/toby/IBA_Project_24spr/saves/insurance_qwen_7b_sentiment",
     per_device_train_batch_size=2,
     gradient_accumulation_steps=1,
     lr_scheduler_type="cosine",
@@ -74,5 +74,5 @@ finetune_config2 = dict(
     quantization_bit=8,
     upcast_layernorm=True,
 )
-# run_exp(finetune_config1)
+run_exp(finetune_config1)
 run_exp()

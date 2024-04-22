@@ -6,6 +6,9 @@
       "response": "\u56de\u590d"
     }
   },
+  "sentiment": {
+    "file_name": "flight_review/train.json"
+  },
   "US_Airline_Sentiment": {
     "hf_hub_url": "Shayanvsf/US_Airline_Sentiment",
     "columns": {
@@ -14,11 +17,15 @@
       "response": "airline_sentiment"
     }
   },
-  "sentiment": {
-    "file_name": "flight_review.jsonl",
-    "columns": {
-      "prompt": "context",
-      "response": "target"
-    }
+  "identity": {
+    "file_name": "identity.json"
+  },
+  "alpaca_gpt4_en": {
+    "file_name": "alpaca_gpt4_data_en.json",
+    "file_sha1": "647f4ad447bd993e4b6b6223d1be15208bab694a"
+  },
+  "alpaca_gpt4_zh": {
+    "file_name": "alpaca_gpt4_data_zh.json",
+    "file_sha1": "3eaa3bda364ccdd59925d7448a698256c31ef845"
   }
 }

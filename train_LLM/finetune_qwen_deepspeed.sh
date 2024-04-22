@@ -5,11 +5,11 @@ deepspeed --num_gpus 4 InsuranceGPT_finetune.py \
     --stage sft \
     --do_train \
     --model_name_or_path Qwen/Qwen1.5-7B-Chat \
-    --dataset InsuranceCorpus \
+    --dataset sentiment,identity,InsuranceCorpus,alpaca_gpt4_en,alpaca_gpt4_zh \
     --dataset_dir /home/zhangmin/toby/IBA_Project_24spr/data \
     --template qwen \
     --finetuning_type lora \
-    --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/insurance_qwen_7b \
+    --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/insurance_qwen_7b_sentiment \
     --overwrite_cache \
     --overwrite_output_dir \
     --cutoff_len 1024 \

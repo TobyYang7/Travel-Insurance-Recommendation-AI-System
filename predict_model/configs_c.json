@@ -3,7 +3,7 @@
   "data": "China",
   "train_val_ratio": [0.6, 0.2],
   "lstm_hidden_size": 256,
-  "lstm_num_layers": 4,
+  "lstm_num_layers": 32,
   "emb_size": 16,
   "dropout": 0,
   "wemb_size": 4,

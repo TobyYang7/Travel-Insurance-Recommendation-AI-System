@@ -7,3 +7,4 @@ data/alpaca_gpt4_data_en.json
 data/alpaca_gpt4_data_zh.json
 exp_model/
 gpt3keys.txt
+saves/InsuranceGPT_v2

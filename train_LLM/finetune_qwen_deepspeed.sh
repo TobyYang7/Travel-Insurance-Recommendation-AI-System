@@ -4,12 +4,12 @@ deepspeed --num_gpus 4 InsuranceGPT_finetune.py \
     --deepspeed  ds_z3_config.json \
     --stage sft \
     --do_train \
-    --model_name_or_path /home/zhangmin/toby/IBA_Project_24spr/exp_model/InsuranceGPT_v1 \
-    --dataset travel_insurance \
+    --model_name_or_path Qwen/Qwen1.5-7B-Chat \
+    --dataset travel_insurance,InsuranceCorpus,sentiment \
     --dataset_dir /home/zhangmin/toby/IBA_Project_24spr/data \
     --template qwen \
     --finetuning_type freeze \
-    --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/InsuranceGPT_v2 \
+    --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/InsuranceGPT_v3_mix \
     --overwrite_cache \
     --overwrite_output_dir \
     --cutoff_len 1024 \

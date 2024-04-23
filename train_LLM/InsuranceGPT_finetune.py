@@ -74,5 +74,5 @@ finetune_config2 = dict(
     quantization_bit=8,
     upcast_layernorm=True,
 )
-run_exp(finetune_config1)
+# run_exp(finetune_config1)
 run_exp()

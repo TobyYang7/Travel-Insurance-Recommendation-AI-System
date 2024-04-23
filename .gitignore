@@ -6,5 +6,5 @@ data/us_flight_data/weather2016_2021.npy
 data/alpaca_gpt4_data_en.json
 data/alpaca_gpt4_data_zh.json
 exp_model/
-gpt3keys.txt
+train_LLM/gpt3keys.txt
 saves/InsuranceGPT_v2

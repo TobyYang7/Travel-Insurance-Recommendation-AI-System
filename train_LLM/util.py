@@ -1,3 +1,6 @@
+import random
+from retrying import retry
+import openai
 from tqdm import tqdm
 import jsonlines
 from transformers import TrainerCallback
@@ -27,9 +30,7 @@ from peft.utils import TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING
 import torch
 from torch.utils.data import DataLoader
 from peft import PeftModel
-
-local_model_path = os.path.expanduser("~/.kaggle/chatglm2-6b/")
-tokenizer = AutoTokenizer.from_pretrained(local_model_path, trust_remote_code=True)
+openai.api_base = "https://api.ai-gaochao.cn/v1"
 
 
 def checkpoint(resume_from_checkpoint, model):
@@ -160,3 +161,32 @@ def score(model, path, max_length=200):
             if total == max_length:
                 break
     return count / total if total > 0 else 0
+
+
+class OpenAIGPT:
+    def __init__(self, model_name="gpt-3.5-turbo", keys_path=None):
+        self.model_name = model_name
+        with open(keys_path, encoding="utf-8", mode="r") as fr:
+            self.keys = [line.strip() for line in fr if len(line.strip()) >= 4]
+
+    def __post_process(self, response):
+        return response["choices"][0]["message"]["content"]
+
+    @retry(wait_fixed=300, stop_max_attempt_number=50)
+    def __call__(self, message):
+        if message is None or message == "":
+            return False, "Your input is empty."
+
+        # current_key = random.choice(self.keys)
+        current_key = self.keys[0] if len(self.keys) == 1 else random.choice(self.keys)
+        openai.api_key = current_key
+        response = openai.ChatCompletion.create(
+            model=self.model_name,
+            messages=[{"role": "user", "content": message}],
+            temperature=0.3,
+            top_p=0.1,
+            frequency_penalty=0.6,
+            presence_penalty=0.6,
+            n=1,
+        )
+        return self.__post_process(response)

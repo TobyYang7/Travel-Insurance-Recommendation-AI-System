@@ -39,5 +39,20 @@
   },
   "travel_insurance_test": {
     "file_name": "travel_insurance/travel_insurance_test.json"
+  },
+  "fineval": {
+    "hf_hub_url": "FinGPT/fingpt-fineval",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "insuranceQA": {
+    "hf_hub_url": "soulhq-ai/insuranceQA-v2",
+    "columns": {
+      "prompt": "input",
+      "response": "output"
+    }
   }
 }

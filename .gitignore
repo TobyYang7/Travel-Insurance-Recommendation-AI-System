@@ -8,3 +8,5 @@ data/alpaca_gpt4_data_zh.json
 exp_model/
 train_LLM/gpt3keys.txt
 saves/InsuranceGPT_v2
+LLaMA-Factory/
+saves/llama3_v1_mix/

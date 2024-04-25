@@ -1,12 +1,12 @@
 #!/bin/bash
 
-DATASET_NAME="travel_insurance,sentiment"
-MODEL_NAME="llama3_v5_insuranceQA"
+DATASET_NAME="travel_insurance_4_label_history"
+MODEL_NAME="llama3_v6_insuranceQA_lora_history"
 # MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
-MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/saves/llama3_v4_insuranceQA"
+MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/exp_model/InsuranceGPT"
 
+# CUDA_VISIBLE_DEVICES=2 python run_exp.py \
 deepspeed --num_gpus 4 run_exp.py \
-    --deepspeed  ds_z3_config.json \
     --stage sft \
     --do_train \
     --model_name_or_path $MODEL_PATH \
@@ -31,7 +31,8 @@ deepspeed --num_gpus 4 run_exp.py \
     --learning_rate 5e-5 \
     --num_train_epochs 5 \
     --val_size 0.2 \
-    --ddp_timeout 180000000 \
     --plot_loss \
     --fp16 \
     --load_best_model_at_end \
+    --deepspeed  ds_z3_config.json \
+    --ddp_timeout 180000000 \

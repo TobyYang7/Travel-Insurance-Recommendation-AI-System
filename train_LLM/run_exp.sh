@@ -2,11 +2,12 @@
 
 # MODEL_NAME
 DATASET_NAME="travel_insurance_4_label_test"
-MODEL_NAME="InsuranceGPT"
-# MODEL_PATH="~/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
+MODEL_NAME="InsuranceGPT_v3"
 MODEL_PATH="../exp_model/InsuranceGPT"
+# MODEL_NAME="llama3"
+# MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
 
-CUDA_VISIBLE_DEVICES=0 python run_exp.py \
+CUDA_VISIBLE_DEVICES=2 python run_exp.py \
     --stage sft \
     --model_name_or_path $MODEL_PATH \
     --dataset $DATASET_NAME \
@@ -24,4 +25,4 @@ CUDA_VISIBLE_DEVICES=0 python run_exp.py \
     --predict_with_generate \
     --per_device_eval_batch_size 8 \
     --max_samples 3000 \
-    # --adapter_name_or_path /home/zhangmin/toby/IBA_Project_24spr/saves/llama3_v5_insuranceQA \
+    --adapter_name_or_path /home/zhangmin/toby/IBA_Project_24spr/saves/llama3_v6_insuranceQA_lora_history \

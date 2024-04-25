@@ -60,5 +60,8 @@
   },
   "travel_insurance_4_label_test": {
     "file_name": "travel_insurance_4_label/test.json"
+  },
+  "travel_insurance_4_label_history": {
+    "file_name": "travel_insurance_4_label/history.json"
   }
 }

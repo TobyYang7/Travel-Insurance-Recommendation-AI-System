@@ -9,7 +9,6 @@ import scipy.sparse as sp
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
-import util
 import argparse
 import random
 import copy

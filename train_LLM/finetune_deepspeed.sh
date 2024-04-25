@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DATASET_NAME="insuranceQA"
-MODEL_NAME="llama3_v4_insuranceQA"
-MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
-# MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/saves/llama3_v2_insuranceQA"
+DATASET_NAME="travel_insurance,sentiment"
+MODEL_NAME="llama3_v5_insuranceQA"
+# MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
+MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/saves/llama3_v4_insuranceQA"
 
 deepspeed --num_gpus 4 run_exp.py \
     --deepspeed  ds_z3_config.json \
@@ -13,7 +13,7 @@ deepspeed --num_gpus 4 run_exp.py \
     --dataset $DATASET_NAME \
     --dataset_dir /home/zhangmin/toby/IBA_Project_24spr/data \
     --template 	llama3 \
-    --finetuning_type freeze \
+    --finetuning_type lora \
     --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/$MODEL_NAME \
     --overwrite_cache \
     --overwrite_output_dir \
@@ -29,7 +29,7 @@ deepspeed --num_gpus 4 run_exp.py \
     --eval_steps 100 \
     --evaluation_strategy steps \
     --learning_rate 5e-5 \
-    --num_train_epochs 10 \
+    --num_train_epochs 5 \
     --val_size 0.2 \
     --ddp_timeout 180000000 \
     --plot_loss \

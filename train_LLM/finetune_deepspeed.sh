@@ -1,9 +1,9 @@
 #!/bin/bash
 
-DATASET_NAME="travel_insurance_4_label_history"
-MODEL_NAME="llama3_v6_insuranceQA_lora_history"
-# MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
-MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/exp_model/InsuranceGPT"
+DATASET_NAME="travel_insurance"
+MODEL_NAME="igpt_travel_insurance"
+MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
+# MODEL_PATH="/home/zhangmin/toby/IBA_Project_24spr/exp_model/InsuranceGPT"
 
 # CUDA_VISIBLE_DEVICES=2 python run_exp.py \
 deepspeed --num_gpus 4 run_exp.py \
@@ -13,7 +13,7 @@ deepspeed --num_gpus 4 run_exp.py \
     --dataset $DATASET_NAME \
     --dataset_dir /home/zhangmin/toby/IBA_Project_24spr/data \
     --template 	llama3 \
-    --finetuning_type lora \
+    --finetuning_type freeze \
     --output_dir /home/zhangmin/toby/IBA_Project_24spr/saves/$MODEL_NAME \
     --overwrite_cache \
     --overwrite_output_dir \
@@ -25,8 +25,8 @@ deepspeed --num_gpus 4 run_exp.py \
     --lr_scheduler_type cosine \
     --logging_steps 10 \
     --warmup_steps 20 \
-    --save_steps 100 \
-    --eval_steps 100 \
+    --save_steps 200 \
+    --eval_steps 50 \
     --evaluation_strategy steps \
     --learning_rate 5e-5 \
     --num_train_epochs 5 \

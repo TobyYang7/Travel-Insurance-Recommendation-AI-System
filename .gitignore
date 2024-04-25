@@ -7,12 +7,7 @@ data/alpaca_gpt4_data_en.json
 data/alpaca_gpt4_data_zh.json
 exp_model/InsuranceGPT
 train_LLM/gpt3keys.txt
-saves/InsuranceGPT_v2
 LLaMA-Factory/
-saves/llama3_v1_mix/
-saves/llama3_v2_insuranceQA/
-saves/llama3_v3_insuranceQA/
-saves/llama3_v4_insuranceQA/
-saves/llama3_v5_insuranceQA/
+saves/igpt_v0
 ollama
 train_LLM/gpt3keys.txt

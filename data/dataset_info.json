@@ -54,5 +54,11 @@
       "prompt": "input",
       "response": "output"
     }
+  },
+  "travel_insurance_4_label": {
+    "file_name": "travel_insurance_4_label/train.json"
+  },
+  "travel_insurance_4_label_test": {
+    "file_name": "travel_insurance_4_label/test.json"
   }
 }

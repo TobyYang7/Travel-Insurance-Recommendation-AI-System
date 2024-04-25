@@ -30,7 +30,9 @@ from peft.utils import TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING
 import torch
 from torch.utils.data import DataLoader
 from peft import PeftModel
-openai.api_base = "https://api.ai-gaochao.cn/v1"
+
+
+openai.api_base = "https://one.aiskt.com/v1"
 
 
 def checkpoint(resume_from_checkpoint, model):

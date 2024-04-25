@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # MODEL_NAME
-DATASET_NAME="sentiment_test,travel_insurance_test"
+DATASET_NAME="travel_insurance_4_label_test"
 MODEL_NAME="InsuranceGPT"
 # MODEL_PATH="/home/zhangmin/.cache/modelscope/hub/LLM-Research/Meta-Llama-3-8B-Instruct"
 

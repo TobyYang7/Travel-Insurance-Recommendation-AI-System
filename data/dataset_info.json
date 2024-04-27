@@ -63,5 +63,33 @@
   },
   "travel_insurance_4_label_history": {
     "file_name": "travel_insurance_4_label/history.json"
+  },
+  "cra-travelinsurace": {
+    "hf_hub_url": "daishen/cra-travelinsurace",
+    "columns": {
+      "prompt": "query",
+      "query": "text",
+      "response": "answer"
+    }
+  },
+  "gpt4_insurance": {
+    "file_name": "gpt4_insurance.json",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system",
+      "history": "history"
+    }
+  },
+  "gpt4_RLHF": {
+    "file_name": "gpt4_rlhf.json",
+    "ranking": true,
+    "columns": {
+      "prompt": "question",
+      "response": "answer",
+      "system": "system"
+    }
   }
 }

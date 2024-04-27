@@ -8,6 +8,8 @@ data/alpaca_gpt4_data_zh.json
 exp_model/InsuranceGPT
 train_LLM/gpt3keys.txt
 LLaMA-Factory/
-saves/igpt_v0
 ollama
 train_LLM/gpt3keys.txt
+saves/*
+!saves/exp/
+!saves/igpt_v1_rlhf_travel_insurance/

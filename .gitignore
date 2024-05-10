@@ -1,0 +1,16 @@
+__pycache__/
+data/us_flight_data/adj_mx.npy
+data/us_flight_data/od_pair.npy
+data/us_flight_data/udelay.npy
+data/us_flight_data/weather2016_2021.npy
+data/alpaca_gpt4_data_en.json
+data/alpaca_gpt4_data_zh.json
+exp_model/InsuranceGPT
+train_LLM/gpt3keys.txt
+LLaMA-Factory/
+src/
+ollama
+train_LLM/gpt3keys.txt
+saves/*
+.vscode/
+!saves/exp/

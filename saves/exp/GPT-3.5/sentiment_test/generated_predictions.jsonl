@@ -1,0 +1,100 @@
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet is: B. neutral"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is B. neutral."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is negative."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "B. neutral", "predict": "The sentiment of the tweet seems to be positive. So, the answer would be C. positive."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet \"@SouthwestAir I DM'd you\" is **neutral**."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "B. neutral", "predict": "Based on the content provided, the sentiment of the tweet appears to be neutral."}
+{"label": "C. positive", "predict": "B. neutral"}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems to be negative, as the passenger is expressing frustration about being stuck on the plane and unable to hear the pilot. So, the answer would be A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "Without seeing the content of the tweet itself, it's difficult to determine the sentiment accurately. However, based solely on the mention of \"Sunny So Cal\" and the fact that someone is at an airport, it seems likely that the sentiment is positive. So, I'd go with option C."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "C. positive", "predict": "C. positive"}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "C. positive", "predict": "The sentiment of the tweet is positive (C. positive)."}
+{"label": "B. neutral", "predict": "Based solely on the content of the tweet, it seems to convey a positive sentiment. It's sharing a memory of a JetBlue Airbus A320 landing at Aruba Airport in February 2014, accompanied by aviation enthusiast hashtags like #avgeek and mentioning warm weather, which typically evokes positive feelings. So, the sentiment is **C. positive**."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet is C. positive. It seems like the user is expressing excitement or happiness."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is negative."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is **positive** (C)."}
+{"label": "C. positive", "predict": "C. positive"}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet appears to be negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is **A. negative**."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems negative. It suggests dissatisfaction with United Airlines and implies that the person mentioned, Kathryn Sotelo, will likely choose another airline for travel. So, the answer would be A. negative."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative. The user is expressing frustration and seeking assistance due to their canceled flight."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "B. neutral", "predict": "C. positive"}
+{"label": "C. positive", "predict": "C. positive"}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "A. negative", "predict": "That tweet seems to convey a negative sentiment, as it appears to express frustration or dissatisfaction with United Airlines. So, the sentiment would be A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems to be negative."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "B. neutral", "predict": "Based solely on the provided text, the sentiment of the tweet appears to be neutral (B)."}
+{"label": "A. negative", "predict": "Based on the content provided, the sentiment of the tweet seems to be negative as the passenger is expressing frustration about the delayed departure while being on the plane with infant children. So, the sentiment is: A. negative."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems negative, as the user is expressing frustration and disappointment with American Airlines' lack of response or action. So, the answer would be A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is: C. positive"}
+{"label": "A. negative", "predict": "The sentiment of the tweet appears to be negative, as the user seems to express dissatisfaction with the fact that they have to go online to issue a statement instead of being able to call and talk to someone directly. So, the answer would be A. negative."}
+{"label": "C. positive", "predict": "C. positive"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "B. neutral", "predict": "Without more context, it's difficult to determine the sentiment of the tweet. However, based solely on the information provided (\"@JetBlue flight 705. EWR to FLL\"), the sentiment would likely be neutral (B)."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "B. neutral", "predict": "The sentiment of the tweet is B. neutral."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet can be categorized as A. negative. The user expresses concern and dissatisfaction about unexpected changes to their seat assignment and the aircraft model, indicating they are not pleased with the potential surprises."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems to be neutral (B). The person is asking a question about receiving a refund for a canceled flight and mentions that the phone lines are busy, but there is no overt expression of positive or negative emotion."}
+{"label": "A. negative", "predict": "B. neutral"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "Based on the content provided, the sentiment of the tweet seems to be neutral (option B). It simply states the flight number and the destination without expressing any strong positive or negative emotions."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "B. neutral", "predict": "The sentiment of the tweet seems to be positive, as the person is describing their experience as \"brilliant\" and mentions being in Boston, possibly excited about their journey. So, the sentiment would be **C. positive**."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is negative."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "B. neutral"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative. The customer seems frustrated or dissatisfied with United Airlines' customer service and the issues they've experienced."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "B. neutral", "predict": "B. neutral"}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "A. negative", "predict": "The sentiment of the tweet is C. positive. The use of emojis like 😄 and 💝 suggests excitement and positivity."}
+{"label": "C. positive", "predict": "The sentiment of the tweet is C. positive."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet appears to be negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems negative, with frustrations expressed about the expensive ticket, lack of wifi during a business trip, missed connections, meetings, and the limited compensation provided. So, the sentiment is **A. negative**."}
+{"label": "A. negative", "predict": "A. negative"}
+{"label": "C. positive", "predict": "The sentiment of the tweet seems to be C. positive. The phrase \"Keep up the good work folks\" indicates satisfaction or encouragement, suggesting a positive sentiment towards the airport snow removal method being mentioned."}
+{"label": "C. positive", "predict": "C. positive"}
+{"label": "A. negative", "predict": "The sentiment of the tweet appears to be negative."}
+{"label": "A. negative", "predict": "Based on the content provided, the sentiment of the tweet seems negative. So, the answer is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems negative."}
+{"label": "C. positive", "predict": "The sentiment of the tweet \"@USAirways Will do :)\" is C. positive."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet \"@AmericanAir And gold status too.\" is C. positive. This tweet suggests a positive aspect by mentioning \"gold status,\" typically a higher tier in customer loyalty programs that offer additional privileges or rewards, indicating a positive sentiment towards the airline or the situation."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}
+{"label": "A. negative", "predict": "The sentiment of the tweet seems to be negative. The frustration with another delay and questioning the airline's intentions suggests a negative sentiment. So, the answer would be A. negative."}
+{"label": "B. neutral", "predict": "The sentiment of the tweet appears to be neutral (B). It seems to be providing flight numbers and dates without expressing any particular emotion or opinion."}
+{"label": "A. negative", "predict": "The sentiment of the tweet is A. negative."}

@@ -1,0 +1,602 @@
+[
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the private sector or self-employed with an annual income of 750,000. They have a family of 5 members and one chronic disease, but do not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 26-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.4 million, living with a family of four, managing one chronic disease, and having traveled abroad but not as a frequent flyer.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate, employed in the private sector/self-employed, with an annual income of $1.2 million, living with a family of 7 without chronic diseases, not a frequent flyer but has traveled abroad.",
+    "output": "A. very negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old graduate working in the government sector with an annual income of 400,000, living with a family of four, managing one chronic disease, and not a frequent flyer or having traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old, self-employed professional in the private sector, earning an annual income of $1.5 million, with a graduate degree, a family of three, no chronic diseases, and a penchant for frequent travel, including trips abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 27-year-old individual employed in the private sector or self-employed, with a non-graduate status, an annual income of 450,000, a family of four, no chronic diseases, and no history of frequent flyer or international travel.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old employed in the government sector with a graduate degree, earning an annual income of 1,200,000, residing in a family of six, with one chronic disease but no history of frequent flying or international travel.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old, self-employed individual in the private sector with a graduate degree, earning an annual income of 750,000, living with a family of three, without chronic diseases, and no history of frequent travel or international trips.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 550,000, living with a family of three, without chronic diseases, and no history of frequent flying or international travel.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 35-year-old individual employed in the private sector or self-employed, with an annual income of 800,000, no chronic diseases, not a frequent flyer, and has never traveled abroad, living with a family of four.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.4 million, residing with a family of four, possessing good health with no chronic diseases, though not a frequent flyer, has traveled abroad previously.",
+    "output": "Based on the profile provided, the willingness to buy travel insurance would likely be categorized as **D. very positive**.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old employed in the government sector, a graduate with an annual income of 650,000, living with a family of five, managing one chronic disease, and with no history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old, graduate employed in the private sector or self-employed with an annual income of 500,000, living with five family members, managing one chronic disease, and without a history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old, self-employed individual in the private sector with a graduate degree, earning an annual income of $1.2 million, living with a family of six, without chronic diseases, who frequently flies domestically but hasn't traveled abroad.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate, employed in the private sector or self-employed, with an annual income of 600,000, residing with a family of three, enjoying good health with no chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 30-year-old self-employed individual with an annual income of 800,000, supporting a family of four, with no history of chronic diseases, has never traveled abroad, and is not a frequent flyer.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 800,000, no chronic diseases, and a family of four, who does not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of ₹550,000, no chronic diseases, not a frequent flyer, and no history of traveling abroad, living with a family of four.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old employed in the government sector with a graduate degree, an annual income of $1,300,000, a family of four, no chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 550,000 and a family of three, leading a healthy lifestyle with no chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 26-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.3 million, living with a family of five, without chronic diseases, and having no history of frequent flying or international travel.",
+    "output": "The most appropriate option to judge the willingness to buy the travel insurance is **B. negative**.\n",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old employed in the government sector, a graduate with an annual income of 800,000, living with a family of six, managing one chronic disease, and not a frequent flyer or traveler abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old individual employed in the government sector with an annual income of 400,000, not a graduate, living with three family members, with no chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate, working in the private sector or as self-employed, earning an annual income of 350,000, with a family of 8 members, one chronic disease, and no history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old individual, employed in the private sector or self-employed, holds a graduate degree, with an annual income of 750,000, belonging to a family of four, with no chronic diseases, frequently flies, and has not traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old graduate working in the government sector with an annual income of 400,000, living with a family of four, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate with an annual income of $1,200,000, employed in the private sector or self-employed, living with a family of four without chronic diseases, frequently flying domestically but not yet traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 32-year-old graduate working in the government sector with an annual income of 850,000, no chronic diseases, and a family of four, not a frequent flyer, and has not traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, earning an annual income of 800,000, living with a family of four, with one chronic disease, and no history of frequent flying or international travel.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "\"A 34-year-old employed in the government sector, a graduate with an annual income of $1,300,000, living with a family of four without chronic diseases, and has not traveled abroad or frequently flown.\"",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old individual in the private sector or self-employed, earning an annual income of 1,150,000, living with 5 family members, managing one chronic disease, not a frequent flyer, and has not traveled abroad.",
+    "output": "Option A. very negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 26-year-old graduate working in the private sector/self-employed with an annual income of 600,000, living with a family of 5 members and managing one chronic disease. Not a frequent flyer and has never traveled abroad.",
+    "output": "Option A: very negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of $1,450,000, a family of five, no chronic diseases, and a frequent flyer who has traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This profile is of a 32-year-old individual working in the government sector, who is a graduate and earns an annual income of 800000. They have a family of 6 members and have one chronic disease. They are not a frequent flyer and have never traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, earning an annual income of 700,000, with a family of three, one chronic disease, no frequent flyer status, and previous international travel experience.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate employed in the private sector/self-employed, with an annual income of 800,000, no chronic diseases, and a family of five, not a frequent flyer, and has never traveled abroad.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old employed in the government sector, a graduate with an annual income of $1.3 million, residing with a family of four, in good health with no chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old government sector employee, a graduate with an annual income of $130,000, living with a family of four without chronic diseases, and having no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate working in the private sector/self-employed with an annual income of 1,200,000, no chronic diseases, not a frequent flyer, and has never traveled abroad, living with a family of four.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of $1,250,000, and a family of seven. Healthy with no chronic diseases, and currently not a frequent flyer or having traveled abroad.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the private sector or self-employed with an annual income of 1.3 million, living with a family of six, without chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the private sector/self-employed with an annual income of 1200000, living with four family members, managing one chronic disease, having not traveled frequently or abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This 32-year-old individual, employed in the government sector with a graduate degree, earns an annual income of $350,000 and lives with a family of four. They have one chronic disease but do not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old graduate employed in the private sector/self-employed with an annual income of 750,000, living with a family of three, managing one chronic disease, and with no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate working in the government sector with an annual income of 400,000, residing in a family of six with no chronic diseases, and having no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 900,000, living with two family members, no chronic diseases, and a frequent flyer who hasn't traveled abroad yet.",
+    "output": "Option B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate employed in the government sector with an annual income of $120,000, living with a family of three, without chronic diseases, and having no history of frequent flying or international travel.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate, employed in the private sector or self-employed, with an annual income of $1,400,000, residing with a family of three members, free from chronic diseases, not a frequent flyer but having traveled abroad before.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.4 million, hailing from a family of six without chronic diseases, who hasn't flown frequently but has traveled abroad before.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This 27-year-old individual, employed in the government sector, holds a graduate degree, earns an annual income of 500,000, lives with a family of three, has one chronic disease, and does not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old, self-employed individual in the private sector, with a graduate degree and an annual income of 500,000, living with a family of four, free from chronic diseases, and not a frequent flyer or having traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This profile describes a 32-year-old individual employed in the government sector, a graduate with an annual income of 800,000, living with a family of two, managing one chronic disease, and having no history of frequent flying or international travel.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate employed in the private sector or self-employed, with an annual income of 900,000, living with a family of three, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate in the private sector or self-employed with an annual income of $1,350,000, living with a family of 8 members, without chronic diseases, not a frequent flyer but has traveled abroad before.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate, employed in the private sector or self-employed, with an annual income of 900,000, living with a family of four, enjoying good health with no chronic diseases, and having not traveled frequently or abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old graduate employed in the private sector or self-employed, with an annual income of 1.7 million, living with a family of four. They have one chronic disease, frequently fly, but have not traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 30-year-old individual in the private sector/self-employed with an annual income of 750,000, living with three family members, one chronic disease, no frequent flyer miles, and no history of traveling abroad.",
+    "output": "C. positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate employed in the private sector/self-employed with an annual income of $1,150,000, living with a family of four. They have one chronic disease but do not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old graduate, employed in the private sector or self-employed, with an annual income of 500,000, no chronic diseases, not a frequent flyer, and no history of international travel, residing with a family of five.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 30-year-old individual in the private sector or self-employed, with an annual income of 500,000, no chronic diseases, not a frequent flyer, never traveled abroad, and part of a family of 8.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 26-year-old, graduate employed in the private sector or self-employed with an annual income of 600,000, living with three family members, with no chronic diseases, and no history of frequent flying or travel abroad.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 27-year-old graduate working in the government sector with an annual income of 500,000, no chronic diseases, no frequent flyer, and no history of traveling abroad, living with a family of four.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This 27-year-old individual, employed in the government sector with a yearly income of 500,000, holds a graduate degree, has a family of four, no chronic diseases, and hasn't traveled abroad or flown frequently.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 550,000, no chronic diseases, not a frequent flyer, and no history of traveling abroad, living with a family of five.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the private sector or self-employed with an annual income of 900,000, residing with two family members, without chronic diseases, a frequent flyer who hasn't traveled abroad.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate in the private sector or self-employed, earning an annual income of 1,350,000, with a family of four, no chronic diseases, not a frequent flyer, but has traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old graduate, employed in the private sector or self-employed, with an annual income of $1.4 million, no chronic diseases, a family of four, no frequent flyer status, and having traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the government sector with an annual income of $300,000, living with a family of three, no chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, earning an annual income of $1,150,000, with a family of seven members, one chronic disease, and no history of frequent flying or international travel.",
+    "output": "Option A: very negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old, graduate employed in the private sector or self-employed, with an annual income of $1,400,000, a family of four, no chronic diseases, and having traveled abroad but not frequently.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 32-year-old employed in the government sector, with a graduate degree, an annual income of 900,000, a family of four, no chronic diseases, and a penchant for frequent flying but no international travel experience.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old employed in the government sector with an annual income of $300,000, residing with a family of four, with no chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old graduate working in the government sector with an annual income of 800,000, living with a family of three without chronic diseases, and not a frequent flyer or having traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old graduate, employed in the private sector or self-employed, with an annual income of $1,050,000, living with a family of three, managing one chronic disease, and having no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old graduate employed in the private sector/self-employed, with an annual income of $1,500,000, a family of six, one chronic disease, frequently flies, and has traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 30-year-old individual employed in the private sector or self-employed, with an annual income of 650,000, a family of six, one chronic disease, and no history of frequent flying or travel abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of $1,450,000, belonging to a family of four, without chronic diseases, who frequently travels domestically and internationally.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 34-year-old individual, employed in the private sector or self-employed, holds a graduate degree, with an annual income of $1,050,000, and belongs to a family of seven. They have no chronic diseases, frequently travel by air, but have not traveled abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate, employed in the private sector or self-employed, with an annual income of 900,000, living with a family of five members, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.7 million, living with a family of four, no chronic diseases, frequently flies, but hasn't traveled abroad yet.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This profile is of a 28-year-old individual working in the government sector, who is a graduate and has an annual income of 600000. They have a family of three members and no chronic diseases. They are a frequent flyer but have never traveled abroad.",
+    "output": "Option B. Negative.",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate working in the government sector with an annual income of $300,000, part of a family of six, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old government sector employee with a graduate degree, an annual income of $130,000, a family of five, one chronic disease, frequent flyer status, and no history of international travel.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "This individual is a 28-year-old graduate employed in the private sector or self-employed, with an annual income of 500,000. They live with five family members and have no chronic diseases. They do not frequently fly or travel abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old, graduate employed in the private sector/self-employed, with an annual income of $1,450,000, belonging to a family of four, free from chronic diseases, a frequent flyer, and with international travel experience.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old, graduate employed in the private sector or self-employed with an annual income of 1,200,000, living with a family of four, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "Option B: negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate employed in the private sector/self-employed with an annual income of 900,000, has a family of six, one chronic disease, is a frequent flyer, and has not traveled abroad.",
+    "output": "Option A. very negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate working in the government sector with an annual income of 600,000, living with a family of three, without chronic diseases, and no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate employed in the private sector/self-employed with an annual income of $1,450,000, belonging to a family of six with no chronic diseases, who frequently travels domestically and abroad.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old government sector employee, a graduate with an annual income of 1.2 million, no chronic diseases, not a frequent flyer, and has never traveled abroad, residing with a family of five.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 26-year-old graduate, working in the private sector or self-employed, with an annual income of 500,000, no chronic diseases, and a family of three, who hasn't traveled abroad or flown frequently.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 31-year-old graduate employed in the government sector with an annual income of $1.3 million, belonging to a family of 8 members, without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old graduate, employed in the private sector or self-employed, with an annual income of 550,000. They have a family of six, no chronic diseases, are a frequent flyer, and have not traveled abroad.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 35-year-old individual, working in the private sector or self-employed, without a graduate degree, earning an annual income of 800,000, living with a family of five, free from chronic diseases, not a frequent flyer, but has traveled abroad before.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old graduate, employed in the private sector or self-employed, with an annual income of 1.4 million, hailing from a family of five without chronic diseases, and having traveled abroad, but not a frequent flyer.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old individual in the private sector or self-employed, with an annual income of $1,150,000, no chronic diseases, not a frequent flyer, and has never traveled abroad, living with a family of five.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 29-year-old graduate, employed in the private sector or self-employed, with an annual income of 1,200,000, a family of three, no chronic diseases, not a frequent flyer, but has traveled abroad before.",
+    "output": "B. negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 33-year-old self-employed graduate with an annual income of 1.4 million, 1 chronic disease, a family of 8, who has traveled abroad but is not a frequent flyer.",
+    "output": "D. very positive",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 28-year-old government sector employee, a graduate earning an annual income of $300,000, living with a family of 5 without chronic diseases, and with no history of frequent flying or international travel.",
+    "output": "Option B. Negative",
+    "history": []
+  },
+  {
+    "instruction": "Determine whether the person will buy Travel insurance, you will output: (A. very negative / B. negative / C. positive / D. very positive)",
+    "input": "A 25-year-old individual working in the private sector or self-employed, with an annual income of 1,150,000, no chronic diseases, a family of 5, a frequent flyer who has not traveled abroad yet.",
+    "output": "Option B. Negative.",
+    "history": []
+  }
+]

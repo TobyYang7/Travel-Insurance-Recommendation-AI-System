@@ -33,3 +33,18 @@ We used three main datasets to train and evaluate our models:
 ### Deep Learning Model
 
 Our deep learning model uses the ASTGCN framework to predict flight delays based on spatio-temporal data. This framework captures both temporal and spatial correlations in the data for accurate predictions.
+
+## Citation
+
+If you use this code or dataset in your research, please cite our report using the following BibTeX entry:
+
+```bibtex
+@techreport{yang2024insurancegpt,
+  author       = {Yuzhe Yang and Haoqi Zhang and Zhidong Peng and Yilin Guo and Tianji Zhou},
+  title        = {Travel Insurance Recommendation AI System Based on Flight Delay Predictions and Customer Sentiment},
+  institution  = {The Chinese University of Hong Kong, Shenzhen},
+  year         = {2024},
+  url          = {https://github.com/TobyYang7/Travel-Insurance-Recommendation-AI-System},
+  note         = {Available at: \url{https://github.com/TobyYang7/Travel-Insurance-Recommendation-AI-System}}
+}
+```

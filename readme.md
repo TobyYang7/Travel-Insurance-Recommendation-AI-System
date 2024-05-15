@@ -2,24 +2,34 @@
 
 ![alt text](assest/bg.svg)
 
-## Introduction
+This repository contains the implementation of an AI system designed to predict flight delays and recommend travel insurance to customers based on their potential purchase intentions.
 
-As the economy and aviation industry develops, more and more people choose to travel by plane for leisure and business trips. As a result, flight delays have become a major source of conflict between passengers and airlines, delays always cause much loss to the airlines, and lead to negative emotions to passengers. Flight delays disrupt passengers' travel plans. Consequently, flight delay insurance emerged, underwriting the airline's on-time departure credibility to compensate passengers for delays, mitigating their inconvenience. While sold as a standalone policy, it is often offered as a supplementary coverage to travel accident insurance. However, nowadays many airlines cannot provide great delay prediction values as a reference for passengers, but only calculate the average value based on historical records, which reveals that there exists an urgent need to develop better insurance strategies.
-  
-Therefore, Our project will design a new Al system to predict flight delays and price the insurance, enabling the airlines can provide personalized insurance recommendations for passengers. This Al system will analyze the rates of flight delays based on multiple relevant data, such as flight dynamic data, city weather, and special situations data. Besides, it will construct user profiles with sentiment analysis based on users' feedback to airlines. Finally, the system will offer a personalized and optimal insurance recommendations, contributing to supplying a suitable service for each customer and gaining more benefits for airlines. Through personalized insurance recommendations, our AI system can boost customer satisfaction and loyalty while reducing stress caused by flight delays. Our system could reshape customer service in the airline industry and promote a positive image and competitive edge for airlines, resulting from focusing on prediction accuracy and user interaction quality.
+## Overview
 
-## Team Members
+Our AI system, Insurance-GPT, leverages a Large Language Model (LLM) to analyze customer interactions in real-time and predict flight delays using a deep learning model. This system provides personalized insurance recommendations to improve user experience and offers valuable insights for insurance pricing strategies.
 
-## Dataset
+## Features
 
-[Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment?resource=download&select=Tweets.csv)
+- **Real-time Interaction**: Insurance-GPT interacts with users to understand their needs and preferences.
+- **Flight Delay Prediction**: Utilizes a deep learning model to predict flight delays accurately.
+- **Personalized Insurance Recommendations**: Provides tailored insurance suggestions based on predicted delays and customer sentiment.
 
-[InsuranceCorpus](https://huggingface.co/datasets/Ddream-ai/InsuranceCorpus)
+## Datasets
 
-[United States Department of Transportation](https://www.transtats.bts.gov/databases.asp?Z1qr_VQ=E&Z1qr_Qr5p=N8vn6v10&f7owrp6_VQF=D)
+We used three main datasets to train and evaluate our models:
 
-## Framework
+1. **[Travel Insurance Dataset](https://www.kaggle.com/datasets/marwandiab/travel-insurance-dataset)**: Contains customer profiles and their potential to purchase insurance.
+2. **[Twitter US Airline Sentiment Dataset](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment?resource=download&select=Tweets.csv)**: Provides user reviews about US airlines, categorized as positive or negative.
+3. **[InsuranceQA-v2 Dataset](https://huggingface.co/datasets/soulhq-ai/insuranceQA-v2)**: Contains insurance-related questions and answers for training our model.
 
-![alt text](assest/framework.png)
+## Model Implementation
 
-## How to run this project
+### LLM Fine-Tuning
+
+1. **Supervised Fine-Tuning (SFT)**: On the insuranceQA-v2 dataset to improve domain-specific understanding.
+2. **Odds Ratio Preference Optimization (ORPO)**: To enhance the model's generalization and alignment with human preferences.
+3. **LoRA Fine-Tuning**: On the Travel Insurance Dataset to improve precision in predicting user purchase intent.
+
+### Deep Learning Model
+
+Our deep learning model uses the ASTGCN framework to predict flight delays based on spatio-temporal data. This framework captures both temporal and spatial correlations in the data for accurate predictions.
